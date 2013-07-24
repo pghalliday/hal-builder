@@ -1,0 +1,52 @@
+{
+  "name": "hal-builder",
+  "description": "Tools to generate HAL APIs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pghalliday/hal-builder",
+  "author": {
+    "name": "Peter Halliday",
+    "email": "pghalliday@gmail.com",
+    "url": "http://stuffpetedoes.blogspot.nl/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pghalliday/hal-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pghalliday/hal-builder/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pghalliday/hal-builder/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/src/",
+  "engines": {
+    "node": ">= 0.10.4"
+  },
+  "scripts": {
+    "prepublish": "grunt build",
+    "test": "grunt",
+    "travis-cov": {
+      "threshold": 100
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.7.1",
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-mocha-test": "~0.6.2",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-blanket": "~0.0.8",
+    "travis-cov": "~0.2.4"
+  },
+  "keywords": [
+    "HAL",
+    "hypermedia",
+    "API"
+  ]
+}
