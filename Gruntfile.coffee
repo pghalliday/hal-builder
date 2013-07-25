@@ -26,8 +26,8 @@ module.exports = (grunt) ->
         options: 
           reporter: 'html-cov'
           quiet: true
+          captureFile: 'coverage.html'
         src: ['lib-cov/lib/test/**/*.js']
-        dest: 'coverage.html'
       coverage:
         options:
           reporter: 'travis-cov'
